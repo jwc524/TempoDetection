@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class TempoDetector {
 
-    private String version = "1.0.0";
-    private String lastUpdated = "10/22/2021 @ 8:57PM";
+    private String version = "1.0.1";
+    private String lastUpdated = "10/23/2021 @ 12:07PM";
 
     private AudioFile file;
     private Scanner scanner;
@@ -36,8 +36,8 @@ public class TempoDetector {
 
         System.out.println(file.getDetails());
 
-        System.out.println("Would you like to detect another file? (Y/N)");
-        System.out.print(">   ");
+        System.out.println("Would you like to analyze another file? (Y/N)");
+        System.out.print(">  ");
         String input = scanner.next().trim();
 
         if (input.equalsIgnoreCase("Y")) {
@@ -50,7 +50,7 @@ public class TempoDetector {
     private void detectTempo() {
         double tempo = 0.0;
 
-        // do stuff
+
 
         file.setTempo(tempo);
     }
